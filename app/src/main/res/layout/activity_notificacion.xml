@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/titulo1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtEstatura"
+        android:layout_width="278dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="67dp"
+        android:ems="10"
+        android:hint="Ingresa tu altura en metros"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPeso" />
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="292dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:hint="Ingresa peso en kilogramos"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="155dp"
+        android:clickable="true"
+        android:onClick="calcularIMC"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEstatura" />
+</androidx.constraintlayout.widget.ConstraintLayout>
